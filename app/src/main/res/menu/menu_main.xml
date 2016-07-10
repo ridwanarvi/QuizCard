@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tri.kucluk.MainActivity">
+    <item
+        android:id="@+id/action_submit"
+        android:orderInCategory="100"
+        android:title="Submit All"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_browse"
+        android:orderInCategory="100"
+        android:title="Browse for other Quiz"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:title="Download Quiz"
+        app:showAsAction="never" />
+
+    <!--<item
+        android:id="@+id/action_how"
+        android:orderInCategory="100"
+        android:title="How To"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        app:showAsAction="never" />-->
+</menu>

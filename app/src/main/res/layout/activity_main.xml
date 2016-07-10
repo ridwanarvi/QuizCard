@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.ajou.quizcard.MainActivity"
+    android:background="@drawable/cyt83yy">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/appBackground"
+        >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left"
+
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:background="@android:color/transparent"
+                android:id="@+id/leftButton"
+                android:onClick="leftClick"
+                android:scaleType="fitXY"
+                android:layout_gravity="top|left"
+                android:adjustViewBounds="true" />
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionTitle"
+                android:text="Question 1/10"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/markQuestion"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="center"
+                android:text="Not Submitted"/>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:background="@android:color/transparent"
+                android:id="@+id/rightButton"
+                android:scaleType="fitCenter"
+                android:onClick="rightClick"
+                android:layout_gravity="top|right"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:orientation="vertical"
+        android:background="@color/appBackground" >
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/textview_border"
+            android:scrollbars="vertical"
+            android:id="@+id/questionTV"
+            android:nestedScrollingEnabled="true" />
+
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText android:layout_height="wrap_content"
+            android:id="@+id/answerText"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:background="@drawable/textview_border" />
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/appBackground"
+            android:gravity="bottom|end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/skipButton"
+                android:onClick="rightClick"
+                android:text="Skip" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enterButton"
+                android:onClick="submit"
+                android:text="Submit" />
+
+        </LinearLayout>
+</LinearLayout>
